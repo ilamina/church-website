@@ -27,6 +27,7 @@ The goal for this milestone is to design the website by leveraging the informati
 This stage is the final stage in this project. During this time, we get to finalize every aspect of our code by testing and debugging. Undergo code review with peers or professor.
 
 
+
 For a comprehensive guide on initiating a project, I recommend delving into `**Code Complete 2**` authored by Steve McConnell (second edition). This resource illuminates various critical considerations essential for achieving a successful outcome. While alternative references exist, this book serves as an excellent starting point for your project endeavors.
 
 
