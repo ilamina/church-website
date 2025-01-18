@@ -1,6 +1,4 @@
 # Church Website
-
-## About This Project
 The objective of this project is to develop an individual project that incorporates a database structure into the implementation process.
 
 In my case, I have chosen to focus on creating a website for my church. The aim is to establish a fully operational website characterized by user-friendly navigation. Our primary goal is to facilitate easy access for both the church congregation and individuals seeking information about the Gospel or want to know God more. Through this website, we intend to provide stakeholders with comprehensive information as needed.
@@ -14,6 +12,16 @@ In this stage, we will compose and structure the planning document, incorporatin
 
 ## Milestone2: Design and Pitch
 The goal for this milestone is to design the website by leveraging the information gathered in the planning phase outlined in Milestone 1. This entails selecting a suitable color scheme and images, refining the data structure of the website, and creating screen/page mockups to decide on the major screens/components. Additionally, we will develop UML diagrams for each user stories and scenarios. Subsequently, we will present our findings to the entire class and gather valuable feedback.
+
+## Milestone 3: Major Implementation
+
+- Utilization of Object-Oriented Concepts: Proper use of: Information hiding Inheritance Interfaces Generics
+- Graphical User Interface (GUI) Design: Intuitive design Layout Functionality Process flow
+- Software Quality Assurance: Ensuring high-quality software: Code cleanliness Documentation Testing (unit tests, integration tests)
+- Security Implementation: Ensuring the system or website is secure: Authentication mechanisms Data encryption Secure communication protocols
+- Multi-User System: Implementation of different roles/privileges: Admin Regular users Guest users (if applicable)
+- Database Integration: Connecting software to a database: CRUD operations (Create, Read, Update, Delete) Admin area for managing database operations
+
 
 
 
