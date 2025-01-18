@@ -1,0 +1,896 @@
+/*------ HEADER -------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(241, 245, 236); 
+}
+
+
+/*------ NAVIGATION BAR -------*/
+.navbar {
+    background: lightblue; 
+    position: fixed;
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    height: 110px;
+    line-height: 90px;
+    padding-inline: 9vw;
+    transition: .3s;
+    z-index: 100; 
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px; 
+    position: absolute; 
+    top: 20px;
+    left: 20px; 
+    z-index: 1000; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.logo:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative; 
+}
+
+.nav-links li a:hover {
+    color: #debfbf;
+}
+
+.nav-links li a.active1 {
+    color: black;
+    border-bottom: 5px solid #debfbf;
+}
+
+.nav-links li  a.active1:hover {
+    color: #debfbf;
+}
+
+.nav-links li a.active1::after {
+    content: "•"; 
+    color:  #debfbf; /* Color of the dot */
+    position: absolute;
+    bottom: -60px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 20px;
+}
+
+.facebook-link i {
+    font-size: 70px; 
+    color: blue; /* Icon color */
+    padding: 15px;
+    position: absolute; 
+    top: 20px; 
+    right: 20px; /* Adjust the right position as needed */
+    z-index: 1000; 
+    display: inline-block; 
+    width: 80px; 
+    height: 70px; 
+    line-height: 40px; 
+    text-align: center; 
+    border-radius: 10px; 
+    margin-top: -10px; 
+    margin-bottom: 10px; 
+
+}
+
+.facebook-link i:hover {
+    color: rgb(22, 22, 223); 
+    cursor: pointer; 
+}
+
+
+/* Background Image Section */
+#image-section {
+    text-align: center; 
+    margin-bottom: 20px; /* Add margin at the bottom of the image section */
+}
+
+#image-section img {
+    width: 100%; 
+    max-height: 100%; /* Maintain aspect ratio */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text {
+    position: absolute;
+    top: 40%; /* Adjust vertical position */
+    left: 50%; /* Adjust horizontal position */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: greenyellow; 
+    font-size: 40px; 
+    font-weight: 600; 
+    text-align: center; 
+    transition: color 0.3s ease; 
+}
+
+.welcome-text:hover {
+    color: aqua;
+    cursor: pointer; 
+}
+
+/*------ BODY (background_color: Blue and green and maybe White) -------*/
+
+ /* SERVICE SECTION */
+ #service-info {
+    background-color: #e5b4a2;
+    color: green;
+    padding: 20px;
+    text-align: center;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+#service-info:hover {
+    background-color: lightblue;
+}
+
+#service-info h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#service-info p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+ /* ABOUT US SECTION */
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items:  flex-start; /* Align items to the start of the container */
+    padding: 20px;
+}
+
+.about-content {
+    width: 100%; 
+    margin-bottom: 20px; /* Add margin to create space between the content and the image */
+}
+
+.about-content h2 {
+    color: #333; 
+    font-size: 30px; 
+    margin-bottom: 10px; 
+}
+
+.about-content p {
+    color: black; 
+    font-size: 20px; 
+    line-height: 1.5; /* Adjust the line height for better readability */
+}
+
+
+/* CSS for Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slideshow-container img {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    width: 50%; /* Adjust the width as needed */
+    max-height: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: opacity 60s ease; 
+}
+
+.slide {
+    display: none;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+  /* MISSION & VISION */
+.mission-vision-content {
+    width: 100%;
+    margin-top: -5px; 
+    margin-bottom: 20px; 
+}
+
+.mission-vision-content h2 {
+    color: #333; 
+    font-size: 30px; 
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+.mission-vision-content p {
+    color: black; 
+    font-size: 20px; 
+    line-height: 1.5; 
+}
+
+  /* sub mission and vision - cards*/
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: space-between;
+    margin-bottom: 20px; 
+}
+
+.card {
+    width: calc(33.33% - 20px); /* Adjust width as needed */
+    background-color: lightblue; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    margin-bottom: 20px; /* Add margin between cards */
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #e78e8e;
+    padding-bottom: 5px; 
+}
+
+.card p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    background-color: rgb(196, 235, 196); 
+    cursor: pointer;
+}
+
+
+/* Quote Section */
+.card-quote {
+    width: 90%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #debfbf;
+}
+
+.card-quote:hover {
+    background-color: #f0f8ff; /* Adjust background color */
+    cursor: pointer;
+}
+
+.bible-quote {
+    width: 100%; 
+    text-align: center; 
+}
+
+blockquote {
+    font-style: italic; 
+    font-size: 20px; 
+    color: #333; 
+}
+
+blockquote p {
+    margin-bottom: 10px; 
+    font-size: 20px;
+}
+
+footer {
+    font-weight: 600; 
+}
+
+
+/* Leaders Section */
+.leader-content {
+    width: 100%; 
+    margin-top: 50px;
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+.leader-content h2 {
+    color: #333; 
+    font-size: 30px; 
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+.leader-card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block; /* Make leader cards appear in a line */
+    width: calc(16.28% - 20px); /* Adjust width for 6 leader cards per line */
+    height: 300px; 
+    margin-right: 20px; 
+    vertical-align: top; 
+}
+
+/* Remove margin-right from the last card in each row */
+.leader-card:nth-child(6n) {
+    margin-right: 0;
+}
+
+/* Leaders i - for the avatar icon */
+.leader-card i {
+    font-size: 80px; 
+    color: #333; 
+}
+
+.leader-card h3 {
+    color: #333; 
+    font-size: 20px; 
+    margin-top: 10px; 
+}
+
+.leader-card p {
+    color: #888888; 
+    font-size: 16px; 
+    margin-top: 10px; 
+}
+
+.leader-card:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    background-color: rgb(221, 165, 156);
+}
+
+/* Styles for the donation section */
+#donation-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.donation-card {
+    max-width: 1700px; 
+    height: 350px; /* Adjust height as needed */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.donation-card img {
+    max-width: 200px; /* Adjust maximum width of the image */
+    border-radius: 50%;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.donation-card h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.donation-card p {
+    margin-top: 10px 0;
+    font-size: 18px;
+}
+
+.donation-card button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px; 
+}
+
+.donation-card button:hover {
+   background-color: greenyellow;
+}
+
+
+
+/* EVENT PAGE - sunday and weekday service*/
+.event-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+.event-card:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+    transform: scale(1.05);
+
+} 
+
+.event-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    font-size: 16px;
+    color: #eb7d7d;
+}
+
+.image-container {
+    width: 350px; 
+    height: 350px; 
+    margin: 0 auto 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; /* Cover the entire container */ 
+}
+
+
+/* EVENT PAGE - Holy Ghost Service*/
+.event-container1 {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-container1 h1 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.event-container1 .event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+.event-card:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+    transform: scale(1.05);
+
+} 
+
+.event-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    font-size: 16px;
+    color: #eb7d7d;
+}
+
+
+/* Event page -Bible Quote */
+.bible-section {
+    background-color: #e8bebe;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 60px; 
+    margin-top: 40px;
+}
+
+.bible-section:hover {
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.bible-section h2 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bible-section p {
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+
+/* Event page -Contact Form */
+.contact-form-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px; /* Add space below the heading */
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* CORE BELIEFS PAGE */
+.sup {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.title {
+    font-size: 3rem;
+  }
+  
+.belief {
+    max-width: 90%;;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(226, 216, 216);
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+.question {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;  
+  }
+  
+.question h3 {
+    font-size: 2rem;
+    color: green;
+  }
+
+.question h3:hover {
+    cursor: pointer;
+    color: grey;
+  }
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+    padding: 5px;
+}
+
+.answer p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 20px;
+  }
+
+.belief.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.belief.active svg {
+    transform: rotate(180deg);
+}
+
+svg {
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;  
+      transform: translateY(0px);
+    }
+}
+
+
+
+/* ANTHEM PAGE */
+
+/* Style for the anthem section */
+#anthem {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Style for the anthem photo */
+.anthem-photo1 {
+    flex: 1;
+}
+
+.anthem-photo2 {
+    flex: 0;
+}
+
+#anthem .anthem-photo1 img {
+    max-width: 30%;
+    height: 300px;
+    position: absolute;
+    bottom: -140px;
+    right: 20px;
+    z-index: -1; /* Ensure the image is behind the content */
+}
+
+#anthem .anthem-photo2 img {
+    max-width: 30%;
+    height: 300px;
+    position: absolute;
+    bottom: -750px;
+    left: 20px;
+    z-index: -1; /* Ensure the image is behind the content */
+}
+
+
+/* Style for the anthem content */
+.anthem-content {
+    flex: 2;
+}
+
+.anthem-content h2 {
+    margin: 100px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.anthem-stanza {
+    margin-bottom: 40px;
+}
+
+.anthem-stanza p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+/* gallery content - photos */
+.gallery-header {
+    background-color: blue; 
+    color: #333; 
+    padding: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 20%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    text-align: center; 
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.gallery-header:hover {
+    background-color: greenyellow;
+}
+
+.card-image {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    width: 500px;
+    height: 500px; 
+    object-fit: cover; 
+    display: inline-block;
+}
+
+.card-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+
+/*------ FOOTER -------*/
+.footer-container {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    position: sticky;
+    justify-content: space-between; 
+    padding: 20px;
+    background-color:  lightblue;
+    flex-wrap: wrap; /* Allow columns to wrap to the next row if necessary */
+    box-sizing: border-box; 
+}
+
+.footer-container h2 {
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.footer-container a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+}
+
+.footer-container a:hover {
+    color: green;
+    cursor: pointer;
+
+}
+
+.footer-container p {
+    margin: 5px 0;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer-container p:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.footer-container img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Style the Facebook icon */
+.footer-container a i {
+    text-align: center;
+    display: block;
+    color: blue;
+    margin-top: 20px;
+    font-size: 50px; /* Adjust size as needed */
+}
+
+.footer-container a i:hover  {
+    color: blue;
+    cursor: pointer;
+}
+
+.footer-container .copy-right {
+    margin-top: -30px;
+    width: 100%;
+    color:gray;
+    align-items:center;
+}
+
+
+
+ /* ----- MEDIA QUERY == 900px / Media query for mobile devices ----- */
+
+
+
+
+

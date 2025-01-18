@@ -1,0 +1,505 @@
+/* ADMIN PAGE */
+
+/*------ ADMIN LOGIN DETAILS -------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.login-card {
+    width: 50%;
+    height: 500px;
+    margin: 100px auto;
+    background-color: #8dbff5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 30px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.body {
+    padding: 40px;
+}
+
+.avatar {
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(80% - 40px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #a4a1a1;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: lightgray;
+    font-weight: 300;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/*------ ADMIN DASHBOARD -header -------*/
+.dashboard-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.admin-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-header .logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.admin-header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.admin-header .user-info span {
+    margin-right: 20px; /* Adjust margin between text and icon */
+    margin: 10px;
+    font-size: 20px;
+}
+
+.admin-header .user-info span:hover {
+    color: greenyellow;
+}
+
+.admin-header .user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    margin-right: 10px; 
+}
+
+.admin-header .search {
+    flex: 2;
+}
+
+.admin-header .search input {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    margin-left: 40%;
+    border-radius: 5px;
+}
+
+
+
+/*------ ADMIN MAIN DASHBOARD -------*/
+/* Basic styles for the container */
+.container {
+    display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    padding: 10px;
+    background-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-card ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar-card ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sidebar-card ul li a:hover {
+    background-color: greenyellow 
+}
+
+
+/* Dashboard body styles */
+.dashboard-body {
+    flex: 1;
+    padding: 20px;
+}
+
+.dashboard-header h1 {
+    text-align: center;
+    background-color: grey;
+    margin-left: 10%;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+.dashboard-header h1:hover {
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.dashboard-body .card:hover {
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.card-header img {
+    width: 20%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(40.33% - 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+
+.card-body p {
+    margin: 5px 0;
+}
+
+/* Dashboard body -Attendance table */
+.card-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card-body table th,
+.card-body table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.card-body table th {
+    background-color: #f2f2f2;
+}
+
+
+/*------ ATTENDANCE PAGE -------*/
+.attendance-card {
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-att {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-container-att {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input {
+    width: calc(80% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    width: 30%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  #attendance-table {
+    width: 50%;
+    border-collapse: collapse;
+  }
+  
+  #attendance-table th, #attendance-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #attendance-table th {
+    background-color: #f2f2f2;
+  }
+
+
+
+
+/*------ MEMBERS PAGE -------*/
+.member-card {
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.header-member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container-member {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="file"] {
+    width: calc(80% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 30%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#member-table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+#member-table th,
+#member-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#member-table th {
+    background-color: #f2f2f2;
+}
+
+
+
+
+/*------ UPCOMING EVENTS -------*/
+.container-event{
+    flex: 1;
+    padding: 20px;
+}
+
+.title h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: grey;
+    margin-left: 70px;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.title h1:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-event {
+    flex: 0 0 calc(44.33% - 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card-event:hover {
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.card-header-event {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.card-header-event h2 {
+    margin: 0;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.add-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.add-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/*------ REPORTS -------*/
+.container-report {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-report {
+    flex: 0 0 calc(80% - 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.card-header-report {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.card-header-report h2 {
+    margin: 0;
+}
