@@ -1,6 +1,6 @@
-## Church Website
+# Church Website
 
-**##About This Project**
+**## About This Project**
 
 The objective of this project is to develop an individual project that incorporates a database structure into the implementation process.
 
@@ -9,7 +9,7 @@ In my case, I have chosen to focus on creating a website for my church. The aim 
 To accomplish this project, I intend to employ various programming languages, including HTML, CSS, PHP, SQL, and JavaScript.
 
 
-**Milestone 1: Project Planning & Proposal, Peer Review**
+**## Milestone 1: Project Planning & Proposal, Peer Review**
 
 In this stage, we will compose and structure the planning document, incorporating details such as identification of stakeholders, system requirements, specifications for both functional and non-functional project requirements. This will encompass a preliminary visual representation, featuring a basic sketch or skeletal architecture design for each page/screen, complete with directional annotations. Additionally, we will articulate clear and comprehensive user stories, outline use case scenarios, develop a structured data plan outlining defined tables, relational diagrams, and conclude with a project timeline. The timeline will encompass milestone tasks, deadlines, and deliverables, with the flexibility to employ planning strategies such as Gantt charts or any other methodologies deemed effective.
 
