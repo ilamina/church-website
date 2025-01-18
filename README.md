@@ -1,7 +1,7 @@
 # Church Website
 The objective of this project is to develop an individual project that incorporates a database structure into the implementation process.
 
-In my case, I have chosen to focus on creating a website for my church. The aim is to establish a fully operational website characterized by user-friendly navigation. Our primary goal is to facilitate easy access for both the church congregation and individuals seeking information about the Gospel or want to know God more. Through this website, we intend to provide stakeholders with comprehensive information as needed.
+In my case, I have chosen to focus on creating a website for a church. The aim is to establish a fully operational website characterized by user-friendly navigation. Our primary goal is to facilitate easy access for both the church congregation and individuals seeking information about the Gospel or want to know God more. Through this website, we intend to provide stakeholders with comprehensive information as needed.
 
 To accomplish this project, I intend to employ various programming languages, including HTML, CSS, PHP, SQL, and JavaScript.
 
